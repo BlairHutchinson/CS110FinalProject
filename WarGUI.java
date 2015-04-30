@@ -22,10 +22,12 @@ public class WarGUI extends JFrame
   private JPanel panel2 = new JPanel();
   private JPanel panel3 = new JPanel();
   private JPanel panel4 = new JPanel();
- 
-  private ImageIcon back = new ImageIcon("back.jpg");//back of a card
-  private ImageIcon cardLeft = new ImageIcon();//far left face-up card
-  private ImageIcon cardRight = new ImageIcon();//far right face-up card
+  //back of a card
+  private ImageIcon back = new ImageIcon("back.jpg");
+  //far left face-up card
+  private ImageIcon cardLeft = new ImageIcon();
+  //far right face-up card
+  private ImageIcon cardRight = new ImageIcon();
   //face down card in a War
   private ImageIcon cardLeftWar = new ImageIcon();
   private ImageIcon cardRightWar = new ImageIcon();
@@ -107,10 +109,12 @@ public class WarGUI extends JFrame
          panel3.setBackground(new Color(0, 122, 0));
          panel4.setBackground(new Color(0, 122, 0));
          
-         
-         panel1.add(deck1size); //Add Player 1's deck size label to panel 1
-         panel1.add(play);//Add the play button to panel 1
-         panel1.add(deck2size);//Add Player 2's deck size label to panel 1
+         //Add Player 1's deck size label to panel 1
+         panel1.add(deck1size); 
+         //Add the play button to panel 1
+         panel1.add(play);
+         //Add Player 2's deck size label to panel 1
+         panel1.add(deck2size);
          
          //Set the font for Player 1's and Player 2's deck size
          deck1size.setFont(new Font("HELVETICA",Font.BOLD,20));
